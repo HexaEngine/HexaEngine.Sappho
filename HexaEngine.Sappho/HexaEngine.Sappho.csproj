@@ -1,14 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
-  <ItemGroup>
-    <PackageReference Include="Hexa.NET.Utilities" Version="2.2.3" />
-  </ItemGroup>
+		<LangVersion>13</LangVersion>
+
+		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+		<EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+		<EnableAotAnalyzer>true</EnableAotAnalyzer>
+		<IsAotCompatible>true</IsAotCompatible>
+
+		<PackageId>HexaEngine.Sappho</PackageId>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Description>HexaEngine.Sappho is a high-performance, source-generated binary serialization library for .NET with support for polymorphism, cyclic references, and efficient memory management. Designed as a submodule of the HexaEngine game engine, it provides fast binary serialization suitable for game state persistence, network communication, asset management, and complex object graph serialization.</Description>
+		<PackageTags>HexaEngine;Sappho;serialization;binary;source generator;polymorphism;game engine;performance;C#;dotnet;AOT;trimming</PackageTags>
+		<Authors>Juna Meinhold</Authors>
+		<Copyright>Copyright (c) 2025 Juna Meinhold</Copyright>
+		<PackageProjectUrl>https://github.com/HexaEngine/HexaEngine.Sappho</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/HexaEngine/HexaEngine.Sappho</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Hexa.NET.Utilities" Version="2.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\icon.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
