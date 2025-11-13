@@ -268,3 +268,7 @@ Developed as a submodule for [HexaEngine](https://github.com/HexaEngine/HexaEngi
 
 - [HexaEngine](https://github.com/HexaEngine/HexaEngine) - The main game engine project
 - [Hexa.NET.Utilities](https://github.com/HexaEngine/Hexa.NET.Utilities) - Utility library used by Sappho
+
+---
+
+**Do you listen to girl in red?**
